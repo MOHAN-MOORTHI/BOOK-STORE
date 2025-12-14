@@ -82,8 +82,8 @@ navigate('/')
             )}
 
             {!isLoggedIn && <>
-              <Nav.Link as={Link} to="/login" >Login</Nav.Link>
-              <Nav.Link as={Link} to="/signup">Signup</Nav.Link>
+              <Nav.Link as={Link} to="/login" className='fw-bold fs-5'>Login</Nav.Link>
+              <Nav.Link as={Link} to="/signup" className='fw-bold fs-5'>Signup</Nav.Link>
             </>}
             {isLoggedIn && (
               <NavDropdown title={dropdownTitle} align="end">
