@@ -87,7 +87,7 @@ navigate('/')
             </>}
             {isLoggedIn && (
               <NavDropdown title={dropdownTitle} align="end">
-                <NavDropdown.Item as={Link} to="/profile">My Profile</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/profile" >My Profile</NavDropdown.Item>
                 <NavDropdown.Divider/>
                 <NavDropdown.Item onClick={logout}>Logout</NavDropdown.Item>
               </NavDropdown>
