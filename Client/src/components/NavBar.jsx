@@ -58,31 +58,31 @@ navigate('/')
   );
 
   return (
-    <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
+    <Navbar bg="primary" variant="" expand="lg" fixed="top" className='bg-primary'>
       <Container>
-        <Navbar.Brand as={Link} to="/">TheBookNest</Navbar.Brand>
+        <Navbar.Brand as={Link} to="/" className='fs-2'>OnlineBookStore</Navbar.Brand>
         <Navbar.Toggle aria-controls="main-nav" />
         <Navbar.Collapse id="main-nav">
           <Nav className="me-auto">
-            <Nav.Link as={Link} to="/">Home</Nav.Link>
+            <Nav.Link as={Link} to="/" className='fw-bold fs-5 '>Home</Nav.Link>
 
-            {isLoggedIn && isUser && <Nav.Link as={Link} to="/dashboard">Dashboard</Nav.Link>}
-            {isLoggedIn && isSeller && <Nav.Link as={Link} to="/seller/dashboard">Seller</Nav.Link>}
-            {isLoggedIn && isAdmin && <Nav.Link as={Link} to="/admin">Admin</Nav.Link>}
+            {isLoggedIn && isUser && <Nav.Link as={Link} to="/dashboard" className='fw-bold fs-5'>Dashboard</Nav.Link>}
+            {isLoggedIn && isSeller && <Nav.Link as={Link} to="/seller/dashboard" className='fw-bold fs-5'>Seller</Nav.Link>}
+            {isLoggedIn && isAdmin && <Nav.Link as={Link} to="/admin" className='fw-bold fs-5'>Admin</Nav.Link>}
 
-            {(isSeller || isAdmin) && <Nav.Link as={Link} to="/add">Add Book</Nav.Link>}
+            {(isSeller || isAdmin) && <Nav.Link as={Link} to="/add" className='fw-bold fs-5'>Add Book</Nav.Link>}
           </Nav>
 
           <Nav className="ms-auto align-items-center">
             {/* hide cart for admin */}
             {!isAdmin && isLoggedIn && (
-              <Nav.Link as={Link} to="/cart">
-                Cart {cartCount > 0 && <Badge bg="danger" pill className="ms-1">{cartCount}</Badge>}
+              <Nav.Link as={Link} to="/cart" className='fw-bold fs-5'>
+                Cart {cartCount > 0 && <Badge bg="danger" pill className="ms-1 fw-bold fs-5" >{cartCount}</Badge>}
               </Nav.Link>
             )}
 
             {!isLoggedIn && <>
-              <Nav.Link as={Link} to="/login">Login</Nav.Link>
+              <Nav.Link as={Link} to="/login" >Login</Nav.Link>
               <Nav.Link as={Link} to="/signup">Signup</Nav.Link>
             </>}
             {isLoggedIn && (

@@ -8,22 +8,31 @@ export default function HeroSection() {
   const token = localStorage.getItem('token')
 
   return (
-    <div className="bg-secondary text-white py-5 hero-section">
+    <div className="bg-secondary text-white py-4 hero-section">
       <Container>
         <Row className="align-items-center">
           <Col md={7}>
-            <h1 className="display-5">Discover Your World in Favourite Book</h1>
+            <h2 className="">Discover Your World in Favourite Book</h2>
             <p className="lead">“Books: your ticket to infinite worlds.”</p>
             <div className="d-flex gap-2">
-              <Button variant="primary" size="lg" onClick={() => navigate('/')}>Browse Books</Button>
-              <Button variant="outline-light" size="lg" onClick={() => token ? navigate('/profile') : navigate('/login')}>My Account</Button>
+              <Button variant="primary" size="sm" onClick={() => navigate('/')}>Browse Books</Button>
+              <Button variant="primary" size="sm" onClick={() => token ? navigate('/profile') : navigate('/login')}>My Account</Button>
             </div>
-          </Col>
-          <Col md={5} className="text-center">
-            <img src="https://www.zb.uzh.ch/storage/app/media/sammlungen/allgemein/20190322-Digitale-Sammlung.jpg"
-                 alt="books" className="img-fluid rounded shadow" />
-          </Col>
+          </Col><div>
+
+          </div>
         </Row>
+
+          <div className='p-10'>
+            <Row md={5} className="text-center ">
+            <img src="/23421.jpg" alt="books" className="img-fluid rounded shadow pt-5" />
+            <img src="/23421.jpg" alt="books" className="img-fluid rounded shadow pt-5" />
+            <img src="/23421.jpg" alt="books" className="img-fluid rounded shadow pt-5" />
+            <img src="/23421.jpg" alt="books" className="img-fluid rounded shadow pt-5" />
+            <img src="/23421.jpg" alt="books" className="img-fluid rounded shadow pt-5" />
+
+            </Row>
+          </div>
       </Container>
     </div>
   )
