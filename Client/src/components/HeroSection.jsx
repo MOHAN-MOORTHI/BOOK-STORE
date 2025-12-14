@@ -25,11 +25,11 @@ export default function HeroSection() {
 
           <div className='p-10'>
             <Row md={5} className="text-center ">
-            <img src="/2.jpg" alt="books" className="img-fluid rounded shadow pt-5" />
-            <img src="/3.jpg" alt="books" className="img-fluid rounded shadow pt-5" />
-            <img src="/4.jpg" alt="books" className="img-fluid rounded shadow pt-5" />
-            <img src="/5.jpg" alt="books" className="img-fluid rounded shadow pt-5" />
-            <img src="/2.jpg" alt="books" className="img-fluid rounded shadow pt-5" />
+            <img src="/2.jpg" alt="books" className="img-fluid rounded shadow p-3" />
+            <img src="/3.jpg" alt="books" className="img-fluid rounded shadow p-3" />
+            <img src="/4.jpg" alt="books" className="img-fluid rounded shadow p-3" />
+            <img src="/5.jpg" alt="books" className="img-fluid rounded shadow p-3" />
+            <img src="/2.jpg" alt="books" className="img-fluid rounded shadow p-3" />
 
             </Row>
           </div>
